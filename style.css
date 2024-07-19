@@ -335,6 +335,7 @@ form {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    color: #fff;
 }
 
 form input, form textarea {
@@ -345,6 +346,7 @@ form input, form textarea {
     padding: 20px 15px;
     border-radius: 15px;
     font-size: 11px;
+    color: #fff;
 }
 
 form .btn-enviar input:hover{
