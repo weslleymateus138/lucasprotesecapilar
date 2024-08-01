@@ -25,3 +25,5 @@ menu.addEventListener('click', ()=>{
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
+
+document.getElementById('year').textContent = new Date().getFullYear();
