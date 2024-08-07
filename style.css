@@ -1,15 +1,10 @@
 :root {
-    --cor-primaria: #333;
-    --cor-secundaria: #000000;
-    --cor-fundo: #525252;
-    --cor-sombra: #ccc;
-    --cor-destaque: #f8f8f8;
-    --cor-placeholder: #000000;
-    --cor-link-hover: #000;
-    --cor-button-bg: #000;
-    --cor-button-text: #fff;
-    --cor-social-bg: #000;
-    --cor-social-text: #fff;
+    --cor-primeira: #000000;
+    --cor-segunda: rgb(10, 10, 10);
+    --cor-terceira: rgb(95, 95, 95);
+    --cor-quarta: rgb(150, 150, 150);
+    --cor-quinta: rgb(220, 220, 220);
+    --cor-sexta: rgb(255, 255, 255);
 }
 
 /* Uso das variáveis */
@@ -30,18 +25,17 @@ header img {
     height: 280px;
     width: 280px;
     border-radius: 50%;
-    box-shadow: 0 0 1px 0 var(--cor-sombra);
+    box-shadow: 0 0 2px 0 var(--cor-primeira);
 }
 
 p {
-    text-align: left;
     text-indent: 20px;
 }
 
 p, h1, h2, h3, h4 {
     word-spacing: 2px;
     letter-spacing: 1px;
-    color: var(--cor-primaria);
+    color: var(--cor-quinta);
 }
 
 main {
@@ -49,18 +43,18 @@ main {
 }
 
 h2.titulo {
-    color: var(--cor-primaria);
+    color: var(--cor-quinta);
     font-size: 20px;
     text-align: center;
     margin: 10px 0;
 }
 
 h2.titulo span {
-    color: var(--cor-secundaria);
+    color: var(--cor-sexta);
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-primeira);
     height: 100vh;
 }
 
@@ -85,14 +79,14 @@ header>.interface, .menu-horizontal {
 
 .menu-horizontal {
     width: 100%;
-    box-shadow: 0 0 1px 0 var(--cor-sombra);
+    box-shadow: 0 0 1px 0 var(--cor-terceira);
     padding: 20px;
     border-radius: 20px;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primeira);
 }
 
 header a {
-    color: var(--cor-primaria);
+    color: var(--cor-sexta);
     text-decoration: none;
     font-size: 14px;
     display: inline-block;
@@ -100,7 +94,7 @@ header a {
 }
 
 header a:hover, form .btn-enviar input:hover {
-    color: var(--cor-link-hover);
+    color: var(--cor-sexta);
     transform: scale(1.05);
 }
 
@@ -119,7 +113,7 @@ header nav.meu-desktop ul li {
 }
 
 .btn-abrir-menu i {
-    color: var(--cor-placeholder);
+    color: var(--cor-sexta);
     font-size: 25px;
     display: none;
 }
@@ -127,7 +121,7 @@ header nav.meu-desktop ul li {
 .menu-mobile {
     position: fixed;
     width: 70%;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-primeira);
     height: 100vh;
     top: 0;
     right: 0;
@@ -146,7 +140,7 @@ header nav.meu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-    color: var(--cor-placeholder);
+    color: var(--cor-quinta);
     font-size: 25px;
 }
 
@@ -159,7 +153,7 @@ header nav.meu-desktop ul li {
 }
 
 .menu-mobile nav ul li a {
-    color: var(--cor-primaria);
+    color: var(--cor-sexta);
     font-size: 15px;
     font-weight: 300;
     padding: 20px 8%;
@@ -167,12 +161,12 @@ header nav.meu-desktop ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: var(--cor-sombra);
+    background-color: var(--cor-sexta);
     color: var(--cor-link-hover);
 }
 
 .overlay-menu {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(123, 123, 123, 0.1);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -197,14 +191,14 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: var(--cor-secundaria);
+    color: var(--cor-sexta);
     font-size: 17px;
 }
 
 .topo-do-site .txt-topo-site p {
     margin: 30px 0;
     font-size: 15px;
-    color: var(--cor-primaria);
+    color: var(--cor-sexta);
 }
 
 .topo-do-site .img-topo-site img {
@@ -226,8 +220,8 @@ section.especialidades {
     padding: 60px 4%;
     margin: 100px 80px;
     border-radius: 50px;
-    box-shadow: 0 0 1px 0 var(--cor-sombra);
-    background-color: var(--cor-destaque);
+    box-shadow: 0 0 1px 0 var(--cor-quarta);
+    background-color: var(--cor-primeira);
 }
 
 section.especialidades .flex {
@@ -245,12 +239,12 @@ section.especialidades .flex {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-primeira);
 }
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.01);
-    box-shadow: 0 0 4px var(--cor-sombra);
+    box-shadow: 0 0 2px 0 var(--cor-terceira);
     cursor: pointer;
 }
 
@@ -274,7 +268,7 @@ section.sobre {
     border-radius: 50px;
     box-sizing: border-box;
     margin: 0 0px;
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-primeira);
 }
 
 section.sobre .flex {
@@ -283,7 +277,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-    color: var(--cor-primaria);
+    color: var(--cor-primeira);
 }
 
 .sobre .txt-sobre h2 {
@@ -293,7 +287,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: var(--cor-secundaria);
+    color: var(--cor-sexta);
     display: block;
 }
 
@@ -311,8 +305,8 @@ section.sobre .flex {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--cor-social-bg);
-    color: var(--cor-social-text);
+    background-color: var(--cor-segunda);
+    color: var(--cor-sexta);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,7 +317,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre .btn-social a:hover {
-    box-shadow: 0px 0px 5px var(--cor-sombra);
+    box-shadow: 0px 0px 5px var(--cor-terceira);
 }
 
 section.formulario {
@@ -332,15 +326,15 @@ section.formulario {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1px 0 var(--cor-sombra);
+    box-shadow: 0 0 1px 0 var(--cor-terceira);
     margin: 100px 80px;
     border-radius: 50px;
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-primeira);
 }
 
 section.formulario h2 {
     font-size: 20px;
-    color: var(--cor-primaria);
+    color: var(--cor-quinta);
 }
 
 form {
@@ -354,20 +348,22 @@ form {
 
 form input, form textarea {
     width: 100%;
-    background-color: var(--cor-fundo);
-    border: 1px solid var(--cor-sombra);
+    background-color: var(--cor-segunda);
+    border: 1px solid var(--cor-segunda);
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
     font-size: 11px;
+    color: var(--cor-sexta);
 }
 
 form .btn-enviar input:hover {
-    box-shadow: 0 0 8px 0 var(--cor-sombra);
+    box-shadow: 0 0 3px 0 var(--cor-terceira);
+    color: var(--cor-sexta);
 }
 
-form input::placeholder {
-    color: var(--cor-secundaria);
+form input::placeholder, form textarea::placeholder {
+    color: var(--cor-sexta);
 }
 
 form textarea {
@@ -377,12 +373,10 @@ form textarea {
 }
 
 form .btn-enviar input {
-    background-color: (--cor-link-hover);
-    color: #fff;
+    background-color: var(--cor-segunda);
     font-weight: 600;
     font-size: 11px;
-    background-color: var(--cor-button-bg);
-    color: var(--cor-button-text);
+    color: var(--cor-sexta);
     padding: 15px 0;
     border-radius: 15px;
     cursor: pointer;
@@ -408,7 +402,7 @@ section.map .suzano, .mogi {
 }
 
 section.map h3 {
-    color: #333;
+    color: var(--cor-quinta);
     line-height: 80px;
     font-size: 15px;
 }
@@ -533,6 +527,7 @@ footer p {
     section.sobre {
         box-shadow: 0 0 0 0;
         padding: 18px;
+        margin-top: 300px;
     }
 
     /* formulario */
@@ -545,13 +540,13 @@ footer p {
     }
 
     section.formulario {
-        margin: 100px 0;
+        margin: 200px 0;
     }
 
     /* MAPAS */
     section.map {
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 200px;
         height: 840px;
         align-items: center;
         text-align: center;
@@ -582,6 +577,6 @@ footer p {
 
     /* FOOTER */
     footer {
-        margin: 50px 50px 0 50px;
+        margin: 200px 50px 0 50px;
     }
 }
